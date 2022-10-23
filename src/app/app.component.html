@@ -1,0 +1,23 @@
+<mat-sidenav-container>
+    <mat-sidenav mode = "side" [(opened)]="opened" class = "color-black">
+        <mat-selection-list role="list" [multiple]="false">
+            <a routerLink=""><mat-list-option role="listitem" selected="selected">Home</mat-list-option></a>
+            <a routerLink="shop"><mat-list-option role="listitem">Shop</mat-list-option></a>
+            <a routerLink="missoes"><mat-list-option role="listitem">Missions</mat-list-option></a>
+            <a routerLink="ideias"><mat-list-option role="listitem">Ideias</mat-list-option></a>
+          </mat-selection-list>
+          
+        <div class = "bottom_div">
+            <mat-list role="list">
+                <mat-list-item role="listitem"><a>G: 13000</a></mat-list-item>
+                <mat-list-item role="listitem">XP: 299/3000</mat-list-item>
+              </mat-list>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content >
+        <button (click)="opened=!opened" mat-button color="accent" aria-label="Example icon button with a menu icon">
+            <mat-icon>menu</mat-icon> 
+        </button>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

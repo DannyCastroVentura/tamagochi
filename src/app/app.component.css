@@ -1,0 +1,31 @@
+mat-sidenav-container {
+    height: 100%;    
+    
+}
+
+mat-sidenav-content{
+    padding: 0px;
+}
+
+mat-sidenav{
+    background-color: #269662;
+    width: 200px;
+    color: #414142;
+}
+
+button{
+    padding: 10px;
+}
+
+.color-black{
+    color:#414142;
+    font-size: 20px;
+}
+
+.bottom_div {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 1rem;
+  }
+
+mat-selection-list a { text-decoration: none }
