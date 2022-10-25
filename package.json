@@ -1,6 +1,7 @@
 {
   "name": "tamagochi",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"ng serve\" \"nodemon src/index.js\"",
@@ -23,6 +24,7 @@
     "concurrently": "^7.5.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "jquery": "^3.6.1",
     "mysql": "^2.18.1",
     "rxjs": "~7.5.0",
